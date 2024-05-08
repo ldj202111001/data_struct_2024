@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 
 double slow_power(double x, int n)
@@ -20,6 +21,17 @@ double recursive_power(double x, int n)
 
 int main()
 {
-	printf("2 ^ 3: %.2lf\n", slow_power(2,3));
-	printf("2 ^ 50: %.2lf", recursive_power(2,50));
+	double  start1, end1;
+	double  start2, end2;
+
+	start1 = (double)clock() / CLOCKS_PER_SEC;
+	printf("slow power: 2 ^ 500: %.2lf\n", slow_power(2,1022));
+	end1 = (double)clock() / CLOCKS_PER_SEC;
+	printf("[time : %lf]\n", (end1 - start1));
+
+	start2 = (double)clock() / CLOCKS_PER_SEC;
+	printf("fast power: 2 ^ 500: %.2lf\n", recursive_power(2,1022));
+	end2 = (double)clock() / CLOCKS_PER_SEC;
+	printf("[time : %lf]\n", (end2 - start2));
+	
 }
