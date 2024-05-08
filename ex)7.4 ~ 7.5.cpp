@@ -3,7 +3,7 @@
 * 실습날짜: 2024 - 05 - 08
 * 학번: 202111001
 * 이름: 이동재
-*/
+*/  
 #include <time.h>
 #include <stdio.h>
 
@@ -16,7 +16,7 @@ double slow_power(double x, int n)
 	return(r);	
 }
 
-double recursive_power(double x, int n)
+double recursive_power(double x, int n)  // 순환구조가 반복구조보다 거의 유일하게 좋은 케이스
 {
 	if (n == 0) return 1;
 	else if ((n % 2) == 0)
