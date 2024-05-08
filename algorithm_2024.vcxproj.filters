@@ -13,10 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\chapter_07">
+      <UniqueIdentifier>{14d1c3f0-5876-46c4-ad88-92e8be638e15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="ex%297.4 ~ 7.5.cpp">
+      <Filter>소스 파일\chapter_07</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
